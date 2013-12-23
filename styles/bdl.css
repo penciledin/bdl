@@ -9,6 +9,14 @@ body,
     /* Set your content font stack here: */
     font-family: "ratio",sans-serif;
 }
+body { background:#333; }
+.hero { text-align:center; background:#333 url(/images/crissXcross.png); color:#999; }
+.bees { background:url(/images/outshone.jpg); background-position:center; background-size:100%; color:#fff; text-align:center; }
+.bees .pure-u-1-2 { background:rgba(0,0,0,0.6); padding-bottom:20px; }
+.bees p { padding:10px; }
+@media (max-width:767px) {
+	.bees .pure-u-1-2 {  }
+}
 
-.hero { text-align:center; background:#333; color:#999; }
-.bees { background:url(/images/outshone.jpg); background-position:center; background-size:100%; color:#333; text-align:center; padding:20px 0 40px 0; }
+
+
