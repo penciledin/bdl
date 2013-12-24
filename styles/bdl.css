@@ -1,22 +1,22 @@
-/*
-When setting the primary font stack, apply it to the Pure grid units along with
-the `body`. Pure Grids use specific font stacks to ensure the greatest
-OS/browser compatibility.
-*/
 body,
 .pure-g [class *= "pure-u"],
-.pure-g-r [class *= "pure-u"] {
-    /* Set your content font stack here: */
-    font-family: "ratio",sans-serif;
-}
-body { background:#333; }
-.hero { text-align:center; background:#333 url(/images/crissXcross.png); color:#999; }
-.bees { background:url(/images/outshone.jpg); background-position:center; background-size:100%; color:#fff; text-align:center; }
-.bees .pure-u-1-2 { background:rgba(0,0,0,0.6); padding-bottom:20px; }
+.pure-g-r [class *= "pure-u"] { font-family: "ratio",sans-serif; }
+.pure-g > div {
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+        box-sizing:border-box; }
+.l-box { padding:1em; }
+
+body { background:#333 url(/images/crissXcross.png); font-size:18px; }
+
+section {  }
+
+.hero { text-align:center; color:#999; padding-top:40px; }
+.hero p { max-width:400px; margin:0 auto 60px; }
+.bees { background:url(/images/outshone.jpg) transparent; background-position:center; background-size:100%; background-repeat:no-repeat; color:#fff; text-align:center; }
+.darkbg { background:rgba(0,0,0,0.6); }
 .bees p { padding:10px; }
-@media (max-width:767px) {
-	.bees .pure-u-1-2 {  }
-}
+@media (max-width:767px) { .bees .pure-u-1-2 {  } }
 
-
+@media (max-width:450px) { .bees { background:none; }}
 
