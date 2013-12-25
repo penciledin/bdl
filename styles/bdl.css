@@ -1,22 +1,32 @@
+@viewport{ zoom:1.0; width:extend-to-zoom; }
+@ms-viewport{ zoom:1.0; width:extend-to-zoom; }
+
 body,
 .pure-g [class *= "pure-u"],
-.pure-g-r [class *= "pure-u"] { font-family: "ratio",sans-serif; }
+.pure-g-r [class *= "pure-u"] { font-family:"ratio",sans-serif; }
 .pure-g > div {
 -webkit-box-sizing:border-box;
    -moz-box-sizing:border-box;
         box-sizing:border-box; }
 .l-box { padding:1em; }
 
-body { background:#333 url(/images/crissXcross.png); font-size:18px; }
+body { background:#333 url(/images/crissXcross.png); font-size:18px; line-height:1.6; }
+h1,
+h2 { line-height:1.1; }
 
 section {  }
-
+.darkbg { background:rgba(0,0,0,0.6); }
 .hero { text-align:center; color:#999; padding-top:40px; }
 .hero p { max-width:400px; margin:0 auto 60px; }
-.bees { background:url(/images/outshone.jpg) transparent; background-position:center; background-size:100%; background-repeat:no-repeat; color:#fff; text-align:center; }
-.darkbg { background:rgba(0,0,0,0.6); }
+.bees { background:url(/images/outshone.jpg) transparent; background-position:center; background-repeat:no-repeat; color:#fff; text-align:center;
+	-webkit-background-size:cover;
+	   -moz-background-size:cover;
+	        background-size:cover; }
 .bees p { padding:10px; }
-@media (max-width:767px) { .bees .pure-u-1-2 {  } }
 
-@media (max-width:450px) { .bees { background:none; }}
+@media (max-width:767px) { }
+@media (max-width:450px) { }
 
+.ifwhen { background:url(/images/light_noise_diagonal.png); }
+.ifwhen .logo { display:inline-flex; vertical-align:middle; }
+.ifwhen .pure-button { background:#ccc; }
