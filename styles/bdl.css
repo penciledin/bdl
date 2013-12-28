@@ -24,9 +24,15 @@ section {  }
 	        background-size:cover; }
 .bees p { padding:10px; }
 
-@media (max-width:767px) { }
+
 @media (max-width:450px) { }
 
 .ifwhen { background:url(/images/light_noise_diagonal.png); }
-.ifwhen .logo { display:inline-flex; vertical-align:middle; }
+.ifwhen .logo { background:url(/images/ifwhen.png) no-repeat; background-size:100%; background-position:center; }
+@media (max-width:767px) {
+	.ifwhen .logo { min-height:130px; background-size:50%; margin-bottom:-40px; }
+}
+@media (max-width:450px) { 
+	.ifwhen .logo { min-height:150px; background-size:90%; }
+}
 .ifwhen .pure-button { background:#ccc; }
