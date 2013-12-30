@@ -4,7 +4,7 @@
 body,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] { font-family:"ratio",sans-serif; }
-.pure-g > div {
+div {
 -webkit-box-sizing:border-box;
    -moz-box-sizing:border-box;
         box-sizing:border-box; }
@@ -14,25 +14,25 @@ body { background:#333 url(/images/crissXcross.png); font-size:18px; line-height
 h1,
 h2 { line-height:1.1; }
 
-section {  }
 .darkbg { background:rgba(0,0,0,0.6); }
 .hero { text-align:center; color:#999; padding-top:40px; }
 .hero p { max-width:400px; margin:0 auto 60px; }
-.bees { background:url(/images/outshone.jpg) transparent; background-position:center; background-repeat:no-repeat; color:#fff; text-align:center;
+.bees { background:url(/images/outshone.jpg) transparent; background-position:center; background-repeat:no-repeat; color:#fff;
 	-webkit-background-size:cover;
 	   -moz-background-size:cover;
 	        background-size:cover; }
+.bees .l-box { text-align:center; }
 .bees p { padding:10px; }
 
 
 @media (max-width:450px) { }
 
 .ifwhen { background:url(/images/light_noise_diagonal.png); }
-.ifwhen .logo { background:url(/images/ifwhen.png) no-repeat; background-size:100%; background-position:center; }
+.ifwhen .logo { background:url(/images/ifwhen.png) no-repeat; background-size:100%; background-position:center; min-height:300px; }
 @media (max-width:767px) {
-	.ifwhen .logo { min-height:130px; background-size:50%; margin-bottom:-40px; }
+	.ifwhen .logo { min-height:200px; background-size:50%; margin-bottom:-40px; }
 }
 @media (max-width:450px) { 
-	.ifwhen .logo { min-height:150px; background-size:90%; }
+	.ifwhen .logo { min-height:180px; background-size:90%; }
 }
 .ifwhen .pure-button { background:#ccc; }
