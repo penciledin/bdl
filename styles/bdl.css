@@ -22,6 +22,8 @@ h1,
 h2 { line-height:1.1; }
 
 .darkbg { background:rgba(0,0,0,0.6); }
+.lightbg { background:rgba(256,256,256,0.2); }
+
 .hero { text-align:center; color:#999; padding-top:40px; }
 .hero .bdl { max-height:200px;}
 .hero h1 { color:#fff;}
@@ -38,12 +40,14 @@ h2 { line-height:1.1; }
 .bees .l-box { text-align:center; }
 .bees p { padding:10px; }
 
-.spelling-bee { background:url(/images/book-the_last_spelling_bee.jpg) transparent; color:#fff; height:100%; }
+.spelling-bee { background:url(/images/book-the_last_spelling_bee.jpg) transparent; color:#fff; height:100%; background-position:top
+!important; }
 
-.fish { background:url(/images/book-fish.jpg); color:#fff; background-position:top; text-align:right; text-shadow:#202020 0 2px 2px; }
+body .fish.cover { background:url(/images/book-fish.jpg); color:#000; background-position:top; text-align:right; }
+.fish .l-box { margin-top:30px; }
 @media (max-width:767px) {
-	.fish { background-position:bottom; }
-	.fish h2, .fish p { color:#000; text-shadow:none; }
+	body .fish.cover { background-position:bottom; }
+	.fish .l-box { margin-top:0; }
 }
 
 .ifwhen { background:url(/images/light_noise_diagonal.png); }
