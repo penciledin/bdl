@@ -4,28 +4,46 @@
 body,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] { font-family:"ratio",sans-serif; }
+.pure-button { text-shadow:none; }
+.pure-button-small { font-size:85%; }
 div {
 -webkit-box-sizing:border-box;
    -moz-box-sizing:border-box;
         box-sizing:border-box; }
 .l-box { padding:1em; }
-
+.pure-button { -webkit-transition:0.5s all; -moz-transition:0.5s all; transition:0.5s all; }
+body .cover { background-position:center; background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	   -moz-background-size:cover;
+	        background-size:cover; }
+p.quote { font-style:italic; font-size:0.9em; }
 body { background:#333 url(/images/crissXcross.png); font-size:18px; line-height:1.6; }
 h1,
 h2 { line-height:1.1; }
 
 .darkbg { background:rgba(0,0,0,0.6); }
 .hero { text-align:center; color:#999; padding-top:40px; }
+.hero .bdl { max-height:200px;}
+.hero h1 { color:#fff;}
 .hero p { max-width:400px; margin:0 auto 60px; }
-.bees { background:url(/images/outshone.jpg) transparent; background-position:center; background-repeat:no-repeat; color:#fff;
-	-webkit-background-size:cover;
-	   -moz-background-size:cover;
-	        background-size:cover; }
+
+.heading { text-align:center; color:#fff; background:#333; }
+.heading h1 { font-weight:100; letter-spacing:10px; }
+@media (max-width:450px) { 
+	.heading h1 { font-size:0.9em; }
+}
+
+.bees { background:url(/images/outshone.jpg) transparent; color:#fff; }
 .bees .l-box { text-align:center; }
 .bees p { padding:10px; }
 
+.spelling-bee { background:url(/images/book-the_last_spelling_bee.jpg) transparent; color:#fff; height:100%; }
 
-@media (max-width:450px) { }
+.fish { background:url(/images/book-fish.jpg); color:#fff; background-position:top; text-align:right; text-shadow:#202020 0 2px 2px; }
+@media (max-width:767px) {
+	.fish { background-position:bottom; }
+	.fish h2, .fish p { color:#000; text-shadow:none; }
+}
 
 .ifwhen { background:url(/images/light_noise_diagonal.png); }
 .ifwhen .logo { background:url(/images/ifwhen.png) no-repeat; background-size:100%; background-position:center; min-height:300px; }
@@ -35,4 +53,5 @@ h2 { line-height:1.1; }
 @media (max-width:450px) { 
 	.ifwhen .logo { min-height:180px; background-size:90%; }
 }
-.ifwhen .pure-button { background:#ccc; }
+.ifwhen .pure-button { background:#302E2E; color:#fff; }
+.ifwhen .pure-button:hover { background:#535151; }
