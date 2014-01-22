@@ -10,14 +10,14 @@ div {
 -webkit-box-sizing:border-box;
    -moz-box-sizing:border-box;
         box-sizing:border-box; }
-.l-box { padding:1em; }
+.l-box { padding:4em 1em; }
 .pure-button { -webkit-transition:0.5s all; -moz-transition:0.5s all; transition:0.5s all; }
 body .cover { background-position:center; background-repeat:no-repeat;
 	-webkit-background-size:cover;
 	   -moz-background-size:cover;
 	        background-size:cover; }
 p.quote { font-style:italic; font-size:0.9em; }
-body { background:#333 url(/images/crissXcross.png); font-size:18px; line-height:1.6; }
+body { background:#333 url(/images/crissXcross.png); font-size:18px; line-height:1.6; color:#ccc; }
 h1,
 h2 { line-height:1.1; }
 
@@ -43,14 +43,14 @@ h2 { line-height:1.1; }
 .spelling-bee { background:url(/images/book-the_last_spelling_bee.jpg) transparent; color:#fff; height:100%; background-position:top
 !important; }
 
-body .fish.cover { background:url(/images/book-fish.jpg); color:#000; background-position:top; text-align:right; }
+body .fish {  }
 .fish .l-box { margin-top:30px; }
 @media (max-width:767px) {
-	body .fish.cover { background-position:bottom; }
+	body .fish.cover { }
 	.fish .l-box { margin-top:0; }
 }
 
-.ifwhen { background:url(/images/light_noise_diagonal.png); }
+.ifwhen { background:url(/images/light_noise_diagonal.png); color:#333 !important; }
 .ifwhen .logo { background:url(/images/ifwhen.png) no-repeat; background-size:100%; background-position:center; min-height:300px; }
 @media (max-width:767px) {
 	.ifwhen .logo { min-height:200px; background-size:50%; margin-bottom:-40px; }
