@@ -18,7 +18,8 @@ body .cover { background-position:center; background-repeat:no-repeat;
 	   -moz-background-size:cover;
 	        background-size:cover; }
 p.quote { font-style:italic; font-size:0.9em; }
-body { background:#333 url(/images/crissXcross.png); font-size:18px; line-height:1.6; color:#ccc; }
+
+body { max-width:1000px; margin:0 auto; background:#333 url(/images/crissXcross.png); font-size:18px; line-height:1.6; color:#ccc; }
 h1,
 h2 { line-height:1.1; }
 
@@ -31,7 +32,7 @@ h2 { line-height:1.1; }
 .hero p { max-width:400px; margin:0 auto 60px; }
 
 .heading { text-align:center; color:#fff; background:#333; }
-.heading .arrow-down { width:0; height:0; position:relative; margin:10px auto -10px auto; border-left:10px solid transparent; border-right:10px solid transparent; border-top: 10px solid #333; }
+.heading:after { content:""; width:0; height:0; position:relative; margin:10px auto -10px auto; border-left:10px solid transparent; border-right:10px solid transparent; border-top: 10px solid #333; }
 .heading h1 { font-weight:100; letter-spacing:10px; }
 @media (max-width:450px) { 
 	.heading h1 { font-size:0.9em; }
